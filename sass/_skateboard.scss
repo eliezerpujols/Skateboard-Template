@@ -1,1 +1,173 @@
-// Main
+@import "variables";
+@import "mixins";
+
+/*----------------------
+
+Global Styles
+
+------------------------*/
+
+html,
+body {
+   background-color: #333;
+   color: $theme-dark;
+   font: 14px/2 Nunito, Helevetica, arial;
+   font-weight: 300;
+}
+
+:active,
+:focus {
+   outline: none !important;
+}
+
+a,
+a:focus,
+a:hover {
+   color: $theme-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 400;
+   margin-bottom: 18px;
+}
+
+p {
+   margin-bottom: 20px;
+}
+
+.no-padding {
+   padding: 0;
+}
+
+aside,
+section {
+   padding: 104px;
+}
+
+/*----------------------
+
+Navigation Styles
+
+------------------------*/
+
+.navbar-default {
+   background-color: white;
+   border-style: none;
+   .navbar-header {
+      .navbar-brand {
+         color: $theme-dark;
+         font-size: 18px;
+         font-weight: 400;
+         text-transform: uppercase;
+      }
+      .navbar-toggle {
+         border-style: none;
+         margin-top: 9px;
+         margin-bottom: 9px;
+         .icon-bar {
+            background-color: $theme-dark;
+         }
+         &:focus,
+         &:hover {
+            background-color: transparent;
+            .icon-bar {
+               background-color: $theme-primary;
+            }
+         }
+      }
+   }
+   .navbar-collapse {
+      border-style: none;
+   }
+   .nav {
+      > li {
+         > a {
+            color: $theme-dark;
+            font-weight: 400;
+            padding: 12px 14px;
+            &:focus,
+            &:hover {
+               color: white;
+               background-color: $theme-primary;
+            }
+         }
+         &.active {
+            > a,
+            > a:focus,
+            > a:hover {
+               color: white;
+               background-color: $theme-primary;
+            }
+         }
+      }
+   }
+   @media (min-width: 768px) {
+      background-color: transparent;
+      padding: 24px 0;
+      @include transition-all();
+      .navbar-header {
+         .navbar-brand {
+            color: white;
+            font-size: 24px;
+         }
+      }
+      .nav {
+         > li {
+            margin-left: 18px;
+            > a {
+               border-top: 3px solid transparent;
+               border-bottom: 3px solid transparent;
+               color: white;
+               &:focus,
+               &:hover {
+                  color: $theme-primary;
+                  background-color: transparent;
+               }
+            }
+            &.active {
+               > a,
+               > a:focus,
+               > a:hover {
+                  color: white;
+                  background-color: transparent;
+                  border-bottom: 3px solid white;
+               }
+            }
+         }
+      }
+      &.affix {
+         background-color: white;
+         padding: 0;
+         .navbar-header {
+            .navbar-brand {
+               color: $theme-dark;
+               font-size: 18px;
+            }
+         }
+         .nav {
+            > li {
+               > a {
+                  color: $theme-dark;
+                  &:focus,
+                  &:hover {
+                     color: $theme-primary;
+                  }
+               }
+               &.active {
+                  > a,
+                  > a:focus,
+                  > a:hover {
+                     color: $theme-primary;
+                     border-bottom: 3px solid $theme-primary;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

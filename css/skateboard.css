@@ -1,0 +1,148 @@
+/*----------------------
+
+Global Styles
+
+------------------------*/
+html,
+body {
+  background-color: #333;
+  color: #202020;
+  font: 14px/2 Nunito, Helevetica, arial;
+  font-weight: 300;
+}
+
+:active,
+:focus {
+  outline: none !important;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #f66414;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+aside,
+section {
+  padding: 104px;
+}
+
+/*----------------------
+
+Navigation Styles
+
+------------------------*/
+.navbar-default {
+  background-color: white;
+  border-style: none;
+}
+.navbar-default .navbar-header .navbar-brand {
+  color: #202020;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  border-style: none;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.navbar-default .navbar-header .navbar-toggle .icon-bar {
+  background-color: #202020;
+}
+.navbar-default .navbar-header .navbar-toggle:focus, .navbar-default .navbar-header .navbar-toggle:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-header .navbar-toggle:focus .icon-bar, .navbar-default .navbar-header .navbar-toggle:hover .icon-bar {
+  background-color: #f66414;
+}
+.navbar-default .navbar-collapse {
+  border-style: none;
+}
+.navbar-default .nav > li > a {
+  color: #202020;
+  font-weight: 400;
+  padding: 12px 14px;
+}
+.navbar-default .nav > li > a:focus, .navbar-default .nav > li > a:hover {
+  color: white;
+  background-color: #f66414;
+}
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus,
+.navbar-default .nav > li.active > a:hover {
+  color: white;
+  background-color: #f66414;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 24px 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    color: white;
+    font-size: 24px;
+  }
+  .navbar-default .nav > li {
+    margin-left: 18px;
+  }
+  .navbar-default .nav > li > a {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    color: white;
+  }
+  .navbar-default .nav > li > a:focus, .navbar-default .nav > li > a:hover {
+    color: #f66414;
+    background-color: transparent;
+  }
+  .navbar-default .nav > li.active > a,
+  .navbar-default .nav > li.active > a:focus,
+  .navbar-default .nav > li.active > a:hover {
+    color: white;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+  }
+  .navbar-default.affix {
+    background-color: white;
+    padding: 0;
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    color: #202020;
+    font-size: 18px;
+  }
+  .navbar-default.affix .nav > li > a {
+    color: #202020;
+  }
+  .navbar-default.affix .nav > li > a:focus, .navbar-default.affix .nav > li > a:hover {
+    color: #f66414;
+  }
+  .navbar-default.affix .nav > li.active > a,
+  .navbar-default.affix .nav > li.active > a:focus,
+  .navbar-default.affix .nav > li.active > a:hover {
+    color: #f66414;
+    border-bottom: 3px solid #f66414;
+  }
+}
+
+/*# sourceMappingURL=skateboard.css.map */
