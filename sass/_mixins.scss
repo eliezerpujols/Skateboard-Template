@@ -1,1 +1,6 @@
-// Mixins
+// Transitions
+@mixin transition-all() {
+   -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+   transition: all .3s ease;
+}
