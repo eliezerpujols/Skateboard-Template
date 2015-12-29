@@ -13,6 +13,7 @@ body {
    color: $theme-dark;
    font: 14px/2 Nunito, Helevetica, arial;
    font-weight: 300;
+   letter-spacing: 1px;
 }
 
 :active,
@@ -33,7 +34,7 @@ h4,
 h5,
 h6 {
    font-weight: 400;
-   margin-bottom: 18px;
+   margin: 0 0 18px;
 }
 
 p {
@@ -199,6 +200,7 @@ Carousel-main Styles
          }
          h2 {
             font-size: 32px;
+            margin-bottom: 28px;
          }
          p {
             font-size: 18px;
