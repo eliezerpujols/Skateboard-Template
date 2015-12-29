@@ -14,7 +14,7 @@
 	$('body').scrollspy({
 		target: '.navbar-fixed-top',
 		offset: 51
-	})
+	});
 
 	// Closes the Responsive Menu on Menu Item Click
 	$('.navbar-collapse ul li a').click(function() {
@@ -26,5 +26,15 @@
 		offset: {
 			top: 100
 		}
-	})
+	});
+
+	// Slide
+	$('#carousel-main').owlCarousel({
+		autoPlay: true,
+		navigation: false,
+		slideSpeed: 300,
+		paginationSpeed: 400,
+		singleItem: true,
+		transitionStyle : "fade"
+	});
 })(jQuery); // End of use strict
