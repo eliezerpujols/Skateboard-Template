@@ -42,7 +42,11 @@ p {
 
 aside,
 section {
-  padding: 104px;
+  padding: 104px 0;
+}
+
+section:nth-child(2n-1) {
+  background-color: #f2f2f2;
 }
 
 /*----------------------
@@ -223,6 +227,68 @@ Carousel-main Styles
   background-color: white;
 }
 
+/*----------------------
+
+Sections Styles
+
+------------------------*/
+@media (min-width: 768px) {
+  #about {
+    padding: 0;
+  }
+}
+
+/*----------------------
+
+Two-column Styles
+
+------------------------*/
+section .two-column .content-column {
+  margin-bottom: 84px;
+}
+section .two-column:last-of-type .content-column {
+  margin-bottom: 0;
+}
+section .two-column .left.hidden-column,
+section .two-column .right.hidden-column {
+  display: none;
+}
+@media (min-width: 768px) {
+  section .two-column {
+    position: relative;
+  }
+  section .two-column .wrapper {
+    height: 440px;
+  }
+  section .two-column .img-column {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  section .two-column .left.hidden-column,
+  section .two-column .right.hidden-column {
+    display: block;
+  }
+  section .two-column .left {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  section .two-column .right {
+    float: right;
+    height: 100%;
+    width: 50%;
+  }
+  section .two-column .content-column {
+    left: 0;
+    margin: 0 auto !important;
+    position: absolute;
+    right: 0;
+    top: 104px;
+  }
+}
+
 .img-1 {
   background-image: url("../img/img-4.jpg");
 }
@@ -233,6 +299,14 @@ Carousel-main Styles
 
 .img-3 {
   background-image: url("../img/img-6.jpg");
+}
+
+.img-4 {
+  background-image: url("../img/img-1.jpg");
+}
+
+.img-5 {
+  background-image: url("../img/img-7.jpg");
 }
 
 /*# sourceMappingURL=skateboard.css.map */
