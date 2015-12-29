@@ -46,7 +46,13 @@ p {
 
 aside,
 section {
-   padding: 104px;
+   padding: 104px 0;
+}
+
+section {
+   &:nth-child(2n-1) {
+      background-color: $theme-bg;
+   }
 }
 
 /*----------------------
@@ -255,6 +261,78 @@ Carousel-main Styles
    }
 }
 
+/*----------------------
+
+Sections Styles
+
+------------------------*/
+
+#about {
+   @media (min-width: 768px) {
+      padding: 0;
+   }
+}
+
+/*----------------------
+
+Two-column Styles
+
+------------------------*/
+
+section {
+   .two-column {
+      .content-column {
+         margin-bottom: 84px; // 104px (Section padding) - 20px = 84px
+      }
+      &:last-of-type {
+         .content-column {
+            margin-bottom: 0;
+         }
+      }
+      .left,
+      .right {
+         &.hidden-column {
+            display: none;
+         }
+      }
+      @media (min-width: 768px) {
+         position: relative;
+         .wrapper {
+            height: 440px;
+         }
+         .img-column {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+         }
+         .left,
+         .right {
+            &.hidden-column {
+               display: block;
+            }
+         }
+         .left {
+            float: left;
+            height: 100%;
+            width: 50%;
+         }
+         .right {
+            float: right;
+            height: 100%;
+            width: 50%;
+         }
+         .content-column {
+            left: 0;
+            margin: 0 auto !important;
+            position: absolute;
+            right: 0;
+            top: 104px;
+         }
+      }
+   }
+}
+
 // Test
 
 .img-1 {
@@ -267,4 +345,12 @@ Carousel-main Styles
 
 .img-3 {
    background-image: url("../img/img-6.jpg");
+}
+
+.img-4 {
+   background-image: url("../img/img-1.jpg");
+}
+
+.img-5 {
+   background-image: url("../img/img-7.jpg");
 }
