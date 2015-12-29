@@ -5,8 +5,7 @@ Global Styles
 ------------------------*/
 html,
 body {
-  background-color: #333;
-  color: #202020;
+  color: #141414;
   font: 14px/2 Nunito, Helevetica, arial;
   font-weight: 300;
   letter-spacing: 1px;
@@ -20,7 +19,7 @@ body {
 a,
 a:focus,
 a:hover {
-  color: #f66414;
+  color: #141414;
 }
 
 h1,
@@ -56,7 +55,7 @@ Navigation Styles
   border-style: none;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #202020;
+  color: #141414;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -67,31 +66,31 @@ Navigation Styles
   margin-bottom: 9px;
 }
 .navbar-default .navbar-header .navbar-toggle .icon-bar {
-  background-color: #202020;
+  background-color: #141414;
 }
 .navbar-default .navbar-header .navbar-toggle:focus, .navbar-default .navbar-header .navbar-toggle:hover {
   background-color: transparent;
 }
 .navbar-default .navbar-header .navbar-toggle:focus .icon-bar, .navbar-default .navbar-header .navbar-toggle:hover .icon-bar {
-  background-color: #f66414;
+  background-color: #141414;
 }
 .navbar-default .navbar-collapse {
   border-style: none;
 }
 .navbar-default .nav > li > a {
-  color: #202020;
+  color: #141414;
   font-weight: 400;
   padding: 12px 14px;
 }
 .navbar-default .nav > li > a:focus, .navbar-default .nav > li > a:hover {
+  background-color: #141414;
   color: white;
-  background-color: #f66414;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus,
 .navbar-default .nav > li.active > a:hover {
+  background-color: #141414;
   color: white;
-  background-color: #f66414;
 }
 @media (min-width: 768px) {
   .navbar-default {
@@ -114,35 +113,37 @@ Navigation Styles
     color: white;
   }
   .navbar-default .nav > li > a:focus, .navbar-default .nav > li > a:hover {
-    color: #f66414;
     background-color: transparent;
+    border-bottom: 3px solid white;
+    color: white;
   }
   .navbar-default .nav > li.active > a,
   .navbar-default .nav > li.active > a:focus,
   .navbar-default .nav > li.active > a:hover {
-    color: white;
     background-color: transparent;
     border-bottom: 3px solid white;
+    color: white;
   }
   .navbar-default.affix {
     background-color: white;
     padding: 0;
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #202020;
+    color: #141414;
     font-size: 18px;
   }
   .navbar-default.affix .nav > li > a {
-    color: #202020;
+    color: #141414;
   }
   .navbar-default.affix .nav > li > a:focus, .navbar-default.affix .nav > li > a:hover {
-    color: #f66414;
+    border-bottom: 3px solid #141414;
+    color: #141414;
   }
   .navbar-default.affix .nav > li.active > a,
   .navbar-default.affix .nav > li.active > a:focus,
   .navbar-default.affix .nav > li.active > a:hover {
-    color: #f66414;
-    border-bottom: 3px solid #f66414;
+    border-bottom: 3px solid #141414;
+    color: #141414;
   }
 }
 
@@ -161,7 +162,7 @@ Carousel-main Styles
   background-size: cover !important;
 }
 #carousel-main .item .item-bg {
-  background-color: rgba(32, 32, 32, 0.5);
+  background-color: rgba(20, 20, 20, 0.5);
   padding: 154px 0 104px;
   position: relative;
   width: 100%;

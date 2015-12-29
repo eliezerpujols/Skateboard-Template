@@ -9,7 +9,6 @@ Global Styles
 
 html,
 body {
-   background-color: #333;
    color: $theme-dark;
    font: 14px/2 Nunito, Helevetica, arial;
    font-weight: 300;
@@ -24,7 +23,7 @@ body {
 a,
 a:focus,
 a:hover {
-   color: $theme-primary;
+   color: $theme-dark;
 }
 
 h1,
@@ -77,7 +76,7 @@ Navigation Styles
          &:hover {
             background-color: transparent;
             .icon-bar {
-               background-color: $theme-primary;
+               background-color: $theme-dark;
             }
          }
       }
@@ -93,16 +92,16 @@ Navigation Styles
             padding: 12px 14px;
             &:focus,
             &:hover {
+               background-color: $theme-dark;
                color: white;
-               background-color: $theme-primary;
             }
          }
          &.active {
             > a,
             > a:focus,
             > a:hover {
+               background-color: $theme-dark;
                color: white;
-               background-color: $theme-primary;
             }
          }
       }
@@ -126,17 +125,18 @@ Navigation Styles
                color: white;
                &:focus,
                &:hover {
-                  color: $theme-primary;
                   background-color: transparent;
+                  border-bottom: 3px solid white;
+                  color: white;
                }
             }
             &.active {
                > a,
                > a:focus,
                > a:hover {
-                  color: white;
                   background-color: transparent;
                   border-bottom: 3px solid white;
+                  color: white;
                }
             }
          }
@@ -156,15 +156,16 @@ Navigation Styles
                   color: $theme-dark;
                   &:focus,
                   &:hover {
-                     color: $theme-primary;
+                     border-bottom: 3px solid $theme-dark;
+                     color: $theme-dark;
                   }
                }
                &.active {
                   > a,
                   > a:focus,
                   > a:hover {
-                     color: $theme-primary;
-                     border-bottom: 3px solid $theme-primary;
+                     border-bottom: 3px solid $theme-dark;
+                     color: $theme-dark;
                   }
                }
             }
