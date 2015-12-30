@@ -289,6 +289,56 @@ section .two-column .right.hidden-column {
   }
 }
 
+/*----------------------
+
+Button Styles
+
+------------------------*/
+.btn-default {
+  border: none;
+  background-color: #141414;
+  color: white;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+  border: none;
+  background-color: black !important;
+  color: white !important;
+}
+
+.btn-primary {
+  border: none;
+  background-color: white;
+  color: #141414;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
+  border: none;
+  background-color: #e6e6e6 !important;
+  color: #141414 !important;
+}
+
+.btn {
+  border-radius: 2px;
+  font-size: inherit;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: inherit;
+}
+.btn:focus, .btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-xl {
+  padding: 12px 22px;
+}
+
 .img-1 {
   background-image: url("../img/img-4.jpg");
 }

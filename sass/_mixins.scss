@@ -4,3 +4,27 @@
    -moz-transition: all .3s ease;
    transition: all .3s ease;
 }
+
+// Box-shadow
+@mixin box-shadow($value) {
+   -webkit-box-shadow: $value;
+   -moz-box-shadow: $value;
+   box-shadow: $value;
+}
+
+// Buttons
+@mixin btn-variant($background, $color) {
+   border: none;
+   background-color: $background;
+   color: $color;
+   @include transition-all;
+   &:hover,
+   &:focus,
+   &.focus,
+   &:active,
+   &.active {
+      border: none;
+      background-color: darken($background, 10%) !important;
+      color: $color !important;
+   }
+}
