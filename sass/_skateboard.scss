@@ -333,6 +333,36 @@ section {
    }
 }
 
+/*----------------------
+
+Button Styles
+
+------------------------*/
+
+.btn-default {
+   @include btn-variant($theme-dark, white);
+}
+
+.btn-primary {
+   @include btn-variant(white, $theme-dark);
+}
+
+.btn {
+   border-radius: 2px;
+   font-size: inherit;
+   font-weight: 400;
+   letter-spacing: 2px;
+   line-height: inherit;
+   &:focus,
+   &:hover {
+      @include box-shadow(none);
+   }
+}
+
+.btn-xl {
+   padding: 12px 22px;
+}
+
 // Test
 
 .img-1 {
