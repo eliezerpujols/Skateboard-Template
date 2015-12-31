@@ -85,6 +85,9 @@ Navigation Styles
   color: #141414;
   font-weight: 400;
   padding: 12px 14px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
 }
 .navbar-default .nav > li > a:focus, .navbar-default .nav > li > a:hover {
   background-color: #141414;
@@ -328,6 +331,9 @@ Button Styles
   font-weight: 400;
   letter-spacing: 2px;
   line-height: inherit;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
 }
 .btn:focus, .btn:hover {
   -webkit-box-shadow: none;
