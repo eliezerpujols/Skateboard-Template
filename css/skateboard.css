@@ -241,6 +241,24 @@ Sections Styles
   }
 }
 
+#video .video-box {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#video .video-box h3 {
+  margin: 24px 0 0;
+}
+@media (min-width: 768px) {
+  #video .video-box li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #video .video-box h3 {
+    margin: 0 0 0 24px;
+  }
+}
+
 /*----------------------
 
 Two-column Styles
