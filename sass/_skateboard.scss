@@ -96,6 +96,7 @@ Navigation Styles
             color: $theme-dark;
             font-weight: 400;
             padding: 12px 14px;
+            @include transition-all();
             &:focus,
             &:hover {
                background-color: $theme-dark;
@@ -353,6 +354,7 @@ Button Styles
    font-weight: 400;
    letter-spacing: 2px;
    line-height: inherit;
+   @include transition-all();
    &:focus,
    &:hover {
       @include box-shadow(none);
