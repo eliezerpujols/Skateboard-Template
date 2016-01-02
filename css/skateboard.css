@@ -32,6 +32,10 @@ h6 {
   margin: 0 0 18px;
 }
 
+strong {
+  font-weight: 400;
+}
+
 p {
   margin-bottom: 20px;
 }
@@ -156,67 +160,72 @@ Navigation Styles
 
 /*----------------------
 
-Carousel-main Styles
+Carousels Styles
 
 ------------------------*/
-#carousel-main {
+#carousel-main,
+#carousel-clients {
   position: relative;
   width: 100%;
 }
-#carousel-main .item {
+#carousel-main .item,
+#carousel-clients .item {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover !important;
+  background-size: cover;
 }
-#carousel-main .item .item-bg {
+#carousel-main .item .item-bg,
+#carousel-clients .item .item-bg {
   background-color: rgba(20, 20, 20, 0.5);
   padding: 154px 0 104px;
   position: relative;
   width: 100%;
 }
-#carousel-main .item .item-bg .inner {
+#carousel-main .item .item-bg .inner,
+#carousel-clients .item .item-bg .inner {
+  color: white;
   text-align: center;
 }
 #carousel-main .item .item-bg h2,
-#carousel-main .item .item-bg p {
-  color: white;
-}
-#carousel-main .item .item-bg h2 {
+#carousel-clients .item .item-bg h2 {
   font-size: 32px;
   margin-bottom: 28px;
 }
-#carousel-main .item .item-bg p {
+#carousel-main .item .item-bg p,
+#carousel-clients .item .item-bg p {
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  #carousel-main {
+  #carousel-main,
+  #carousel-clients {
     min-height: 100vh;
   }
-  #carousel-main .item .item-bg {
+  #carousel-main .item .item-bg,
+  #carousel-clients .item .item-bg {
+    min-height: 100vh;
     padding: 0;
-    min-height: 100vh;
   }
-  #carousel-main .item .item-bg .inner {
+  #carousel-main .item .item-bg .inner,
+  #carousel-clients .item .item-bg .inner {
     margin-top: -110px;
     position: absolute;
     top: 50%;
     width: 100%;
   }
   #carousel-main .item .item-bg h2,
-  #carousel-main .item .item-bg p {
-    color: white;
-  }
-  #carousel-main .item .item-bg h2 {
+  #carousel-clients .item .item-bg h2 {
     font-size: 54px;
   }
 }
-#carousel-main .owl-controls {
-  position: absolute;
+#carousel-main .owl-controls,
+#carousel-clients .owl-controls {
   bottom: 4%;
   margin-top: 0;
+  position: absolute;
   width: 100%;
 }
-#carousel-main .owl-controls .owl-pagination .owl-page span {
+#carousel-main .owl-controls .owl-pagination .owl-page span,
+#carousel-clients .owl-controls .owl-pagination .owl-page span {
   background-color: transparent;
   border: 2px solid white;
   height: 16px;
@@ -226,8 +235,44 @@ Carousel-main Styles
   transition: all .3s ease;
   width: 16px;
 }
-#carousel-main .owl-controls .owl-pagination .owl-page.active span {
+#carousel-main .owl-controls .owl-pagination .owl-page.active span,
+#carousel-clients .owl-controls .owl-pagination .owl-page.active span {
   background-color: white;
+}
+
+#carousel-clients .item .item-bg {
+  padding: 104px 0;
+}
+#carousel-clients .item .item-bg p {
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+}
+#carousel-clients .item .item-bg p::before {
+  color: rgba(255, 255, 255, 0.3);
+  content: '\f10d';
+  font-family: 'FontAwesome';
+  font-size: 54px;
+  font-style: normal;
+  font-weight: normal;
+  left: -10px;
+  position: absolute;
+  top: -50px;
+}
+#carousel-clients .item .item-bg .author strong {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  #carousel-clients {
+    min-height: auto;
+  }
+  #carousel-clients .item .item-bg {
+    min-height: 440px;
+    padding: 0;
+  }
+  #carousel-clients .item .item-bg .inner {
+    margin-top: -80px;
+  }
 }
 
 /*----------------------
@@ -257,6 +302,10 @@ Sections Styles
   #video .video-box h3 {
     margin: 0 0 0 24px;
   }
+}
+
+#clients {
+  padding: 0;
 }
 
 /*----------------------
@@ -381,6 +430,14 @@ Button Styles
 
 .img-5 {
   background-image: url("../img/img-7.jpg");
+}
+
+.img-6 {
+  background-image: url("../img/img-5.jpg");
+}
+
+.img-7 {
+  background-image: url("../img/img-2.jpg");
 }
 
 /*# sourceMappingURL=skateboard.css.map */

@@ -28,8 +28,8 @@
 		}
 	});
 
-	// Slide
-	$('#carousel-main').owlCarousel({
+	// Slides
+	$('#carousel-main, #carousel-clients').owlCarousel({
 		autoPlay: true,
 		navigation: false,
 		slideSpeed: 300,

@@ -36,6 +36,10 @@ h6 {
    margin: 0 0 18px;
 }
 
+strong {
+   font-weight: 400;
+}
+
 p {
    margin-bottom: 20px;
 }
@@ -183,28 +187,26 @@ Navigation Styles
 
 /*----------------------
 
-Carousel-main Styles
+Carousels Styles
 
 ------------------------*/
 
-#carousel-main {
+#carousel-main,
+#carousel-clients {
    position: relative;
    width: 100%;
    .item {
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover !important;
+      background-size: cover;
       .item-bg {
          background-color: rgba($theme-dark, .5);
          padding: 154px 0 104px;
          position: relative;
          width: 100%;
          .inner {
-            text-align: center;
-         }
-         h2,
-         p {
             color: white;
+            text-align: center;
          }
          h2 {
             font-size: 32px;
@@ -219,17 +221,13 @@ Carousel-main Styles
       min-height: 100vh;
       .item {
          .item-bg {
-            padding: 0;
             min-height: 100vh;
+            padding: 0;
             .inner {
                margin-top: -110px;
                position: absolute;
                top: 50%;
                width: 100%;
-            }
-            h2,
-            p {
-               color: white;
             }
             h2 {
                font-size: 54px;
@@ -238,9 +236,9 @@ Carousel-main Styles
       }
    }
    .owl-controls {
-      position: absolute;
       bottom: 4%;
       margin-top: 0;
+      position: absolute;
       width: 100%;
       .owl-pagination {
          .owl-page {
@@ -256,6 +254,47 @@ Carousel-main Styles
                span {
                   background-color: white;
                }
+            }
+         }
+      }
+   }
+}
+
+#carousel-clients {
+   .item {
+      .item-bg {
+         padding: 104px 0;
+         p {
+            font-size: 22px;
+            font-weight: 400;
+            position: relative;
+            &::before {
+               color: rgba(white, .3);
+               content: '\f10d';
+               font-family: 'FontAwesome';
+               font-size: 54px;
+               font-style: normal;
+               font-weight: normal;
+               left: -10px;
+               position: absolute;
+               top: -50px;
+            }
+         }
+         .author {
+            strong {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+   @media (min-width: 768px) {
+      min-height: auto;
+      .item {
+         .item-bg {
+            min-height: 440px;
+            padding: 0;
+            .inner {
+               margin-top: -80px;
             }
          }
       }
@@ -292,6 +331,10 @@ Sections Styles
          }
       }
    }
+}
+
+#clients {
+   padding: 0;
 }
 
 /*----------------------
@@ -405,4 +448,12 @@ Button Styles
 
 .img-5 {
    background-image: url("../img/img-7.jpg");
+}
+
+.img-6 {
+   background-image: url("../img/img-5.jpg");
+}
+
+.img-7 {
+   background-image: url("../img/img-2.jpg");
 }
