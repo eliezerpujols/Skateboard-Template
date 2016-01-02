@@ -44,7 +44,6 @@ p {
   padding: 0;
 }
 
-aside,
 section {
   padding: 104px 0;
 }
@@ -306,6 +305,10 @@ Sections Styles
 
 #clients {
   padding: 0;
+}
+
+.clients-comp img {
+  margin: 50px auto;
 }
 
 /*----------------------
