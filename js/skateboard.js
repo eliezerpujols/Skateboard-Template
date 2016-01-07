@@ -37,4 +37,8 @@
 		singleItem: true,
 		transitionStyle : "fade"
 	});
+
+	$(document).ready(function() {
+		$("#pre-loader").fadeOut(3000);
+	});
 })(jQuery); // End of use strict
