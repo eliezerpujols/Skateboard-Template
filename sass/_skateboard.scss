@@ -350,6 +350,43 @@ Sections Styles
 
 /*----------------------
 
+Footer Styles
+
+------------------------*/
+
+.site-footer {
+   background-color: white;
+   padding: 20px 0;
+   @media (max-width: 768px) {
+      text-align: center;
+   }
+   .ico-love {
+      font-size: 16px;
+   }
+   .footer-social {
+      list-style: none;
+      margin: 20px 0 0 0;
+      padding: 0;
+      @media (min-width: 768px) {
+         margin-top: 0;
+         text-align: right;
+      }
+      li {
+         display: inline-block;
+         margin-left: 18px;
+         &:first-child {
+            margin-left: 0;
+         }
+         i {
+            font-size: 18px;
+            line-height: normal;
+         }
+      }
+   }
+}
+
+/*----------------------
+
 Two-column Styles
 
 ------------------------*/
@@ -423,7 +460,7 @@ textarea {
    &.form-control {
       background-color: white;
       border: none;
-      border-bottom: 2px solid transparent;
+      border-bottom: 3px solid transparent;
       border-radius: 2px;
       color: inherit;
       @include box-shadow(none);
@@ -431,7 +468,7 @@ textarea {
       line-height: inherit;
       padding: 20px 18px;
       &:focus {
-         border-bottom: 2px solid $theme-dark;
+         border-bottom: 3px solid $theme-dark;
          @include box-shadow(none);
       }
    }
