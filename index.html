@@ -23,6 +23,9 @@
 
    <!-- Custom CSS -->
    <link href="css/skateboard.css" rel="stylesheet">
+
+   <!-- Images -->
+   <link href="css/images.css" rel="stylesheet">
 </head>
 <body id="page-top">
    <!-- Navigation -->
@@ -101,8 +104,8 @@
    </header>
 
    <!-- About -->
-   <section id="about">
-      <div class="container-fluid no-padding two-column">
+   <section id="about" class="two-column">
+      <div class="container-fluid no-padding two-column-item">
          <div class="wrapper">
             <div class="left"></div>
             <div class="right hidden-column">
@@ -119,7 +122,7 @@
             </div>
          </div>
       </div>
-      <div class="container-fluid no-padding two-column">
+      <div class="container-fluid no-padding two-column-item">
          <div class="wrapper">
             <div class="left hidden-column">
                <div class="img-column img-5"></div>
@@ -257,7 +260,7 @@
                      <input type="text" class="form-control" placeholder="Name">
                   </div>
                   <div class="form-group">
-                     <input type="text" class="form-control" placeholder="E-mail">
+                     <input type="email" class="form-control" placeholder="E-mail">
                   </div>
                   <div class="form-group">
                      <textarea class="form-control" rows="8" cols="40" placeholder="Messages"></textarea>
@@ -270,11 +273,11 @@
    </section>
 
    <!-- Footer -->
-   <footer class="site-footer">
+   <footer>
       <div class="container">
          <div class="row">
             <div class="col-sm-6">
-               <span>Made with <i class="ico-love fa fa-heart"></i> By <a href="#">Eliezer Pujols</a></span>
+               <span>Made with <i class="ico-love fa fa-heart"></i> By <a href="https://github.com/eliezerpujols" target="_blank">Eliezer Pujols</a></span>
             </div>
             <div class="col-sm-6">
                <ul class="footer-social">

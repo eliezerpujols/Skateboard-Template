@@ -1,11 +1,7 @@
 @import "variables";
 @import "mixins";
 
-/*----------------------
-
-Global Styles
-
-------------------------*/
+// Global Styles
 
 html,
 body {
@@ -50,19 +46,12 @@ p {
 
 section {
    padding: 104px 0;
-}
-
-section {
    &:nth-child(2n-1) {
       background-color: $theme-bg;
    }
 }
 
-/*----------------------
-
-Navigation Styles
-
-------------------------*/
+// Navigation Styles
 
 .navbar-default {
    background-color: white;
@@ -99,7 +88,7 @@ Navigation Styles
             color: $theme-dark;
             font-weight: 400;
             padding: 12px 14px;
-            @include transition-all();
+            @include transition-all;
             &:focus,
             &:hover {
                background-color: $theme-dark;
@@ -119,7 +108,7 @@ Navigation Styles
    @media (min-width: 768px) {
       background-color: transparent;
       padding: 24px 0;
-      @include transition-all();
+      @include transition-all;
       .navbar-header {
          .navbar-brand {
             color: white;
@@ -184,11 +173,7 @@ Navigation Styles
    }
 }
 
-/*----------------------
-
-Carousels Styles
-
-------------------------*/
+// Carousels Styles
 
 #carousel-main,
 #carousel-clients {
@@ -223,9 +208,9 @@ Carousels Styles
             min-height: 100vh;
             padding: 0;
             .inner {
-               margin-top: -110px;
                position: absolute;
                top: 50%;
+               @include transform(translateY(-50%));
                width: 100%;
             }
             h2 {
@@ -246,7 +231,7 @@ Carousels Styles
                border: 2px solid white;
                height: 16px;
                opacity: 1;
-               @include transition-all();
+               @include transition-all;
                width: 16px;
             }
             &.active {
@@ -290,21 +275,14 @@ Carousels Styles
       min-height: auto;
       .item {
          .item-bg {
-            min-height: 440px;
+            min-height: 540px;
             padding: 0;
-            .inner {
-               margin-top: -80px;
-            }
          }
       }
    }
 }
 
-/*----------------------
-
-Sections Styles
-
-------------------------*/
+// Sections Styles
 
 #about {
    @media (min-width: 768px) {
@@ -336,7 +314,7 @@ Sections Styles
    padding: 0;
 }
 
-.clients-comp {
+aside.clients-comp {
    img {
       margin: 50px auto;
    }
@@ -348,13 +326,9 @@ Sections Styles
    }
 }
 
-/*----------------------
+// Footer Styles
 
-Footer Styles
-
-------------------------*/
-
-.site-footer {
+footer {
    background-color: white;
    padding: 20px 0;
    @media (max-width: 768px) {
@@ -385,16 +359,12 @@ Footer Styles
    }
 }
 
-/*----------------------
+// Two-column Styles
 
-Two-column Styles
-
-------------------------*/
-
-section {
-   .two-column {
+.two-column {
+   .two-column-item {
       .content-column {
-         margin-bottom: 84px; // 104px (Section padding) - 20px = 84px
+         margin-bottom: 84px;
       }
       &:last-of-type {
          .content-column {
@@ -410,7 +380,7 @@ section {
       @media (min-width: 768px) {
          position: relative;
          .wrapper {
-            height: 440px;
+            height: 540px;
          }
          .img-column {
             background-position: center;
@@ -420,36 +390,31 @@ section {
          }
          .left,
          .right {
+            height: 100%;
+            width: 50%;
             &.hidden-column {
                display: block;
             }
          }
          .left {
             float: left;
-            height: 100%;
-            width: 50%;
          }
          .right {
             float: right;
-            height: 100%;
-            width: 50%;
          }
          .content-column {
             left: 0;
             margin: 0 auto !important;
             position: absolute;
             right: 0;
-            top: 104px;
+            top: 50%;
+            @include transform(translateY(-50%));
          }
       }
    }
 }
 
-/*----------------------
-
-Form Styles
-
-------------------------*/
+// Form Styles
 
 .form-group {
    margin-bottom: 20px;
@@ -478,11 +443,7 @@ textarea {
    resize:none;
 }
 
-/*----------------------
-
-Button Styles
-
-------------------------*/
+// Buttons Styles
 
 .btn-default {
    @include btn-variant($theme-dark, white);
@@ -507,34 +468,4 @@ Button Styles
 
 .btn-xl {
    padding: 12px 22px;
-}
-
-// Test
-
-.img-1 {
-   background-image: url("../img/img-4.jpg");
-}
-
-.img-2 {
-   background-image: url("../img/img-3.jpg");
-}
-
-.img-3 {
-   background-image: url("../img/img-6.jpg");
-}
-
-.img-4 {
-   background-image: url("../img/img-1.jpg");
-}
-
-.img-5 {
-   background-image: url("../img/img-7.jpg");
-}
-
-.img-6 {
-   background-image: url("../img/img-5.jpg");
-}
-
-.img-7 {
-   background-image: url("../img/img-2.jpg");
 }
