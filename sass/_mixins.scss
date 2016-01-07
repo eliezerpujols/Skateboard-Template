@@ -5,6 +5,13 @@
    transition: all .3s ease;
 }
 
+// Transform
+@mixin transform($value) {
+   -webkit-transform: $value;
+   -moz-transform: $value;
+   transform: $value;
+}
+
 // Box-shadow
 @mixin box-shadow($value) {
    -webkit-box-shadow: $value;

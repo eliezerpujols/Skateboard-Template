@@ -317,6 +317,46 @@ Sections Styles
 
 /*----------------------
 
+Footer Styles
+
+------------------------*/
+.site-footer {
+  background-color: white;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .site-footer {
+    text-align: center;
+  }
+}
+.site-footer .ico-love {
+  font-size: 16px;
+}
+.site-footer .footer-social {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .site-footer .footer-social {
+    margin-top: 0;
+    text-align: right;
+  }
+}
+.site-footer .footer-social li {
+  display: inline-block;
+  margin-left: 18px;
+}
+.site-footer .footer-social li:first-child {
+  margin-left: 0;
+}
+.site-footer .footer-social li i {
+  font-size: 18px;
+  line-height: normal;
+}
+
+/*----------------------
+
 Two-column Styles
 
 ------------------------*/
@@ -379,7 +419,7 @@ input.form-control,
 textarea.form-control {
   background-color: white;
   border: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   border-radius: 2px;
   color: inherit;
   -webkit-box-shadow: none;
@@ -391,7 +431,7 @@ textarea.form-control {
 }
 input.form-control:focus,
 textarea.form-control:focus {
-  border-bottom: 2px solid #141414;
+  border-bottom: 3px solid #141414;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
