@@ -42,7 +42,7 @@ p {
 section {
   padding: 104px 0;
 }
-section:nth-child(2n-1) {
+section:nth-child(2n) {
   background-color: #f2f2f2;
 }
 
