@@ -342,6 +342,12 @@ Sections Styles
    }
 }
 
+#contact {
+   .contact-address {
+      line-height: inherit;
+   }
+}
+
 /*----------------------
 
 Two-column Styles
@@ -400,6 +406,39 @@ section {
          }
       }
    }
+}
+
+/*----------------------
+
+Form Styles
+
+------------------------*/
+
+.form-group {
+   margin-bottom: 20px;
+}
+
+input,
+textarea {
+   &.form-control {
+      background-color: white;
+      border: none;
+      border-bottom: 2px solid transparent;
+      border-radius: 2px;
+      color: inherit;
+      @include box-shadow(none);
+      font-size: inherit;
+      line-height: inherit;
+      padding: 20px 18px;
+      &:focus {
+         border-bottom: 2px solid $theme-dark;
+         @include box-shadow(none);
+      }
+   }
+}
+
+textarea {
+   resize:none;
 }
 
 /*----------------------
