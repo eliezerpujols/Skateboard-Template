@@ -1,8 +1,3 @@
-/*----------------------
-
-Global Styles
-
-------------------------*/
 html,
 body {
   color: #141414;
@@ -47,16 +42,10 @@ p {
 section {
   padding: 104px 0;
 }
-
 section:nth-child(2n-1) {
   background-color: #f2f2f2;
 }
 
-/*----------------------
-
-Navigation Styles
-
-------------------------*/
 .navbar-default {
   background-color: white;
   border-style: none;
@@ -157,11 +146,6 @@ Navigation Styles
   }
 }
 
-/*----------------------
-
-Carousels Styles
-
-------------------------*/
 #carousel-main,
 #carousel-clients {
   position: relative;
@@ -206,9 +190,11 @@ Carousels Styles
   }
   #carousel-main .item .item-bg .inner,
   #carousel-clients .item .item-bg .inner {
-    margin-top: -110px;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 100%;
   }
   #carousel-main .item .item-bg h2,
@@ -266,19 +252,11 @@ Carousels Styles
     min-height: auto;
   }
   #carousel-clients .item .item-bg {
-    min-height: 440px;
+    min-height: 540px;
     padding: 0;
-  }
-  #carousel-clients .item .item-bg .inner {
-    margin-top: -80px;
   }
 }
 
-/*----------------------
-
-Sections Styles
-
-------------------------*/
 @media (min-width: 768px) {
   #about {
     padding: 0;
@@ -307,7 +285,7 @@ Sections Styles
   padding: 0;
 }
 
-.clients-comp img {
+aside.clients-comp img {
   margin: 50px auto;
 }
 
@@ -315,102 +293,91 @@ Sections Styles
   line-height: inherit;
 }
 
-/*----------------------
-
-Footer Styles
-
-------------------------*/
-.site-footer {
+footer {
   background-color: white;
   padding: 20px 0;
 }
 @media (max-width: 768px) {
-  .site-footer {
+  footer {
     text-align: center;
   }
 }
-.site-footer .ico-love {
+footer .ico-love {
   font-size: 16px;
 }
-.site-footer .footer-social {
+footer .footer-social {
   list-style: none;
   margin: 20px 0 0 0;
   padding: 0;
 }
 @media (min-width: 768px) {
-  .site-footer .footer-social {
+  footer .footer-social {
     margin-top: 0;
     text-align: right;
   }
 }
-.site-footer .footer-social li {
+footer .footer-social li {
   display: inline-block;
   margin-left: 18px;
 }
-.site-footer .footer-social li:first-child {
+footer .footer-social li:first-child {
   margin-left: 0;
 }
-.site-footer .footer-social li i {
+footer .footer-social li i {
   font-size: 18px;
   line-height: normal;
 }
 
-/*----------------------
-
-Two-column Styles
-
-------------------------*/
-section .two-column .content-column {
+.two-column .two-column-item .content-column {
   margin-bottom: 84px;
 }
-section .two-column:last-of-type .content-column {
+.two-column .two-column-item:last-of-type .content-column {
   margin-bottom: 0;
 }
-section .two-column .left.hidden-column,
-section .two-column .right.hidden-column {
+.two-column .two-column-item .left.hidden-column,
+.two-column .two-column-item .right.hidden-column {
   display: none;
 }
 @media (min-width: 768px) {
-  section .two-column {
+  .two-column .two-column-item {
     position: relative;
   }
-  section .two-column .wrapper {
-    height: 440px;
+  .two-column .two-column-item .wrapper {
+    height: 540px;
   }
-  section .two-column .img-column {
+  .two-column .two-column-item .img-column {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
   }
-  section .two-column .left.hidden-column,
-  section .two-column .right.hidden-column {
+  .two-column .two-column-item .left,
+  .two-column .two-column-item .right {
+    height: 100%;
+    width: 50%;
+  }
+  .two-column .two-column-item .left.hidden-column,
+  .two-column .two-column-item .right.hidden-column {
     display: block;
   }
-  section .two-column .left {
+  .two-column .two-column-item .left {
     float: left;
-    height: 100%;
-    width: 50%;
   }
-  section .two-column .right {
+  .two-column .two-column-item .right {
     float: right;
-    height: 100%;
-    width: 50%;
   }
-  section .two-column .content-column {
+  .two-column .two-column-item .content-column {
     left: 0;
     margin: 0 auto !important;
     position: absolute;
     right: 0;
-    top: 104px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 
-/*----------------------
-
-Form Styles
-
-------------------------*/
 .form-group {
   margin-bottom: 20px;
 }
@@ -441,11 +408,6 @@ textarea {
   resize: none;
 }
 
-/*----------------------
-
-Button Styles
-
-------------------------*/
 .btn-default {
   border: none;
   background-color: #141414;
@@ -492,34 +454,6 @@ Button Styles
 
 .btn-xl {
   padding: 12px 22px;
-}
-
-.img-1 {
-  background-image: url("../img/img-4.jpg");
-}
-
-.img-2 {
-  background-image: url("../img/img-3.jpg");
-}
-
-.img-3 {
-  background-image: url("../img/img-6.jpg");
-}
-
-.img-4 {
-  background-image: url("../img/img-1.jpg");
-}
-
-.img-5 {
-  background-image: url("../img/img-7.jpg");
-}
-
-.img-6 {
-  background-image: url("../img/img-5.jpg");
-}
-
-.img-7 {
-  background-image: url("../img/img-2.jpg");
 }
 
 /*# sourceMappingURL=skateboard.css.map */
