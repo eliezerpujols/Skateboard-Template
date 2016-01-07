@@ -311,6 +311,10 @@ Sections Styles
   margin: 50px auto;
 }
 
+#contact .contact-address {
+  line-height: inherit;
+}
+
 /*----------------------
 
 Two-column Styles
@@ -360,6 +364,41 @@ section .two-column .right.hidden-column {
     right: 0;
     top: 104px;
   }
+}
+
+/*----------------------
+
+Form Styles
+
+------------------------*/
+.form-group {
+  margin-bottom: 20px;
+}
+
+input.form-control,
+textarea.form-control {
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 2px;
+  color: inherit;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 20px 18px;
+}
+input.form-control:focus,
+textarea.form-control:focus {
+  border-bottom: 2px solid #141414;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea {
+  resize: none;
 }
 
 /*----------------------
