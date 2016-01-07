@@ -1,0 +1,41 @@
+// Box-shadow
+
+@mixin box-shadow($value) {
+   -webkit-box-shadow: $value;
+   -moz-box-shadow: $value;
+   box-shadow: $value;
+}
+
+// Buttons
+
+@mixin btn-variant($background, $color) {
+   border: none;
+   background-color: $background;
+   color: $color;
+   @include transition-all;
+   &:hover,
+   &:focus,
+   &.focus,
+   &:active,
+   &.active {
+      border: none;
+      background-color: darken($background, 10%) !important;
+      color: $color !important;
+   }
+}
+
+// Transform
+
+@mixin transform($value) {
+   -webkit-transform: $value;
+   -moz-transform: $value;
+   transform: $value;
+}
+
+// Transitions
+
+@mixin transition-all() {
+   -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+   transition: all .3s ease;
+}
