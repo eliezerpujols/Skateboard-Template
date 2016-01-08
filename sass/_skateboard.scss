@@ -55,7 +55,7 @@ section {
 
 #pre-loader {
    background: url("../img/pre-loader.gif"), white;
-   background-position: center;
+   background-position: center center;
    background-repeat: no-repeat;
    height: 100%;
    left: 0;
@@ -302,81 +302,7 @@ section {
    @media (min-width: 768px) {
       padding: 0;
    }
-}
-
-#video {
-   .video-box {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      h3 {
-         margin: 24px 0 0;
-      }
-      @media (min-width: 768px) {
-         li {
-            display: inline-block;
-            vertical-align: middle;
-         }
-         h3 {
-            margin: 0 0 0 24px;
-         }
-      }
-   }
-}
-
-#clients {
-   padding: 0;
-}
-
-aside.clients-comp {
-   img {
-      margin: 50px auto;
-   }
-}
-
-#contact {
-   .contact-address {
-      line-height: inherit;
-   }
-}
-
-// Footer Styles
-
-footer {
-   background-color: white;
-   padding: 20px 0;
-   @media (max-width: 768px) {
-      text-align: center;
-   }
-   .ico-love {
-      font-size: 16px;
-   }
-   .footer-social {
-      list-style: none;
-      margin: 20px 0 0 0;
-      padding: 0;
-      @media (min-width: 768px) {
-         margin-top: 0;
-         text-align: right;
-      }
-      li {
-         display: inline-block;
-         margin-left: 18px;
-         &:first-child {
-            margin-left: 0;
-         }
-         i {
-            font-size: 18px;
-            line-height: normal;
-         }
-      }
-   }
-}
-
-// Two-column Styles
-
-.two-column {
-   .two-column-item {
+   .two-column {
       .content-column {
          margin-bottom: 84px;
       }
@@ -428,6 +354,79 @@ footer {
    }
 }
 
+#video {
+   .video-box {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      h3 {
+         margin: 24px 0 0;
+      }
+      @media (min-width: 768px) {
+         li {
+            display: inline-block;
+            vertical-align: middle;
+         }
+         h3 {
+            margin: 0 0 0 24px;
+         }
+      }
+   }
+}
+
+#clients {
+   padding: 0;
+}
+
+aside.clients-comp {
+   img {
+      margin: 50px auto;
+   }
+}
+
+#contact {
+   .contact-address {
+      line-height: inherit;
+   }
+   .ico-contact {
+      font-size: 16px;
+      margin-right: 12px;
+   }
+}
+
+// Footer Styles
+
+footer {
+   background-color: white;
+   padding: 20px 0;
+   @media (max-width: 768px) {
+      text-align: center;
+   }
+   .ico-love {
+      font-size: 16px;
+   }
+   .footer-social {
+      list-style: none;
+      margin: 20px 0 0 0;
+      padding: 0;
+      @media (min-width: 768px) {
+         margin-top: 0;
+         text-align: right;
+      }
+      li {
+         display: inline-block;
+         margin-left: 18px;
+         &:first-child {
+            margin-left: 0;
+         }
+         i {
+            font-size: 18px;
+            line-height: normal;
+         }
+      }
+   }
+}
+
 // Form Styles
 
 .form-group {
@@ -444,8 +443,9 @@ textarea {
       color: inherit;
       @include box-shadow(none);
       font-size: inherit;
+      height: auto;
       line-height: inherit;
-      padding: 20px 18px;
+      padding: 12px 18px;
       &:focus {
          border-bottom: 3px solid $theme-dark;
          @include box-shadow(none);
@@ -454,7 +454,7 @@ textarea {
 }
 
 textarea {
-   resize:none;
+   resize: none;
 }
 
 // Buttons Styles
