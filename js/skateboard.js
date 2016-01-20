@@ -31,6 +31,7 @@
 	// Slides
 	$('#carousel-main, #carousel-clients').owlCarousel({
 		autoPlay: true,
+		autoHeight: true,
 		navigation: false,
 		slideSpeed: 300,
 		paginationSpeed: 400,
