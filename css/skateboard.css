@@ -190,7 +190,7 @@ section:nth-child(2n) {
 #carousel-clients .item .item-bg p {
   font-size: 18px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (min-height: 590px) {
   #carousel-main,
   #carousel-clients {
     min-height: 100vh;
@@ -259,7 +259,7 @@ section:nth-child(2n) {
 #carousel-clients .item .item-bg .author strong {
   font-size: 16px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (min-height: 590px) {
   #carousel-clients {
     min-height: auto;
   }
