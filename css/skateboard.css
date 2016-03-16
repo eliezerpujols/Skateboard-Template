@@ -1,3 +1,8 @@
+/* ------------------------------
+
+   Global Components
+ 
+--------------------------------- */
 html,
 body {
   color: #141414;
@@ -46,6 +51,11 @@ section:nth-child(2n) {
   background-color: #f2f2f2;
 }
 
+/* ------------------------------
+
+   Pre-loader
+ 
+--------------------------------- */
 #pre-loader {
   background: url("../img/pre-loader.gif"), white;
   background-position: center center;
@@ -58,6 +68,11 @@ section:nth-child(2n) {
   z-index: 9999999;
 }
 
+/* ------------------------------
+
+   Navigation
+ 
+--------------------------------- */
 .navbar-default {
   background-color: white;
   border-style: none;
@@ -158,6 +173,11 @@ section:nth-child(2n) {
   }
 }
 
+/* ------------------------------
+
+   Carousels Styles
+ 
+--------------------------------- */
 #carousel-main,
 #carousel-clients {
   position: relative;
@@ -269,6 +289,11 @@ section:nth-child(2n) {
   }
 }
 
+/* ------------------------------
+
+   About Section
+ 
+--------------------------------- */
 @media (min-width: 768px) {
   #about {
     padding: 0;
@@ -324,6 +349,11 @@ section:nth-child(2n) {
   }
 }
 
+/* ------------------------------
+
+   Video Section
+ 
+--------------------------------- */
 #video .video-box {
   list-style: none;
   margin: 0;
@@ -342,6 +372,11 @@ section:nth-child(2n) {
   }
 }
 
+/* ------------------------------
+
+   Clients Sections
+ 
+--------------------------------- */
 #clients {
   padding: 0;
 }
@@ -350,6 +385,11 @@ aside.clients-comp img {
   margin: 50px auto;
 }
 
+/* ------------------------------
+
+   Contact Section
+ 
+--------------------------------- */
 #contact .contact-address {
   line-height: inherit;
 }
@@ -358,6 +398,11 @@ aside.clients-comp img {
   margin-right: 12px;
 }
 
+/* ------------------------------
+
+   Footer
+ 
+--------------------------------- */
 footer {
   background-color: white;
   padding: 20px 0;
@@ -393,6 +438,11 @@ footer .footer-social li i {
   line-height: normal;
 }
 
+/* ------------------------------
+
+   Form Styles
+ 
+--------------------------------- */
 .form-group {
   margin-bottom: 20px;
 }
@@ -424,6 +474,11 @@ textarea {
   resize: none;
 }
 
+/* ------------------------------
+
+   Buttons Styles
+ 
+--------------------------------- */
 .btn-default {
   border: none;
   background-color: #141414;
@@ -470,6 +525,23 @@ textarea {
 
 .btn-xl {
   padding: 12px 22px;
+}
+
+/* ------------------------------
+
+   Extras
+ 
+--------------------------------- */
+::-moz-selection {
+  background-color: #141414;
+  color: white;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #141414;
+  color: white;
+  text-shadow: none;
 }
 
 /*# sourceMappingURL=skateboard.css.map */
