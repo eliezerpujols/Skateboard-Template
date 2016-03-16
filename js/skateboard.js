@@ -1,5 +1,10 @@
 (function($) {
 	"use strict"; // Start of use strict
+   
+   // Pre-loader Setting
+	$(window).load(function() {
+		$("#pre-loader").fadeOut("slow");
+	});
 
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$('a.page-scroll').bind('click', function(event) {
@@ -37,11 +42,6 @@
 		paginationSpeed: 400,
 		singleItem: true,
 		transitionStyle : "fade"
-	});
-
-	// Pre-loader
-	$(document).ready(function() {
-		$("#pre-loader").fadeOut(3000);
 	});
 
 	// Initialize WOW.js Scrolling Animations
