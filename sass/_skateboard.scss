@@ -1,7 +1,11 @@
 @import "variables";
 @import "mixins";
 
-// Global Styles
+/* ------------------------------
+
+   Global Components
+ 
+--------------------------------- */
 
 html,
 body {
@@ -51,7 +55,11 @@ section {
    }
 }
 
-// Pre-loader
+/* ------------------------------
+
+   Pre-loader
+ 
+--------------------------------- */
 
 #pre-loader {
    background: url("../img/pre-loader.gif"), white;
@@ -65,7 +73,11 @@ section {
    z-index: 9999999;
 }
 
-// Navigation Styles
+/* ------------------------------
+
+   Navigation
+ 
+--------------------------------- */
 
 .navbar-default {
    background-color: white;
@@ -187,7 +199,11 @@ section {
    }
 }
 
-// Carousels Styles
+/* ------------------------------
+
+   Carousels Styles
+ 
+--------------------------------- */
 
 #carousel-main,
 #carousel-clients {
@@ -296,7 +312,11 @@ section {
    }
 }
 
-// Sections Styles
+/* ------------------------------
+
+   About Section
+ 
+--------------------------------- */
 
 #about {
    @media (min-width: 768px) {
@@ -354,6 +374,12 @@ section {
    }
 }
 
+/* ------------------------------
+
+   Video Section
+ 
+--------------------------------- */
+
 #video {
    .video-box {
       list-style: none;
@@ -374,6 +400,12 @@ section {
    }
 }
 
+/* ------------------------------
+
+   Clients Sections
+ 
+--------------------------------- */
+
 #clients {
    padding: 0;
 }
@@ -383,6 +415,12 @@ aside.clients-comp {
       margin: 50px auto;
    }
 }
+
+/* ------------------------------
+
+   Contact Section
+ 
+--------------------------------- */
 
 #contact {
    .contact-address {
@@ -394,7 +432,11 @@ aside.clients-comp {
    }
 }
 
-// Footer Styles
+/* ------------------------------
+
+   Footer
+ 
+--------------------------------- */
 
 footer {
    background-color: white;
@@ -427,7 +469,11 @@ footer {
    }
 }
 
-// Form Styles
+/* ------------------------------
+
+   Form Styles
+ 
+--------------------------------- */
 
 .form-group {
    margin-bottom: 20px;
@@ -457,7 +503,11 @@ textarea {
    resize: none;
 }
 
-// Buttons Styles
+/* ------------------------------
+
+   Buttons Styles
+ 
+--------------------------------- */
 
 .btn-default {
    @include btn-variant($theme-dark, white);
@@ -482,4 +532,23 @@ textarea {
 
 .btn-xl {
    padding: 12px 22px;
+}
+
+/* ------------------------------
+
+   Extras
+ 
+--------------------------------- */
+
+// -- Highlight Color Customization
+::-moz-selection {
+   background-color: $theme-dark;
+   color: white;
+   text-shadow: none;
+}
+
+::selection {
+   background-color: $theme-dark;
+   color: white;
+   text-shadow: none;
 }
